@@ -1,0 +1,24 @@
+.paddingSpan {
+    /*font-size:30px; */
+    font-weight:bold; width: 100%; display: block;padding-bottom: 10px;
+}
+.paddingSpan2 {
+    border: 1px solid red;
+}
+#paddingSpan {
+    /*font-size:30px; */ font-weight:bold; width: 100%; display: block;padding-bottom: 10px;
+}
+#paddingSpan2 {
+    border: 1px solid blue;
+}
+
+#person1{
+    padding-bottom: 10px;
+}
+
+#person1 a{
+    color: rgba(44, 93, 168, 0.801);
+}
+.heist {
+    font-family:Century Gothic;
+}
