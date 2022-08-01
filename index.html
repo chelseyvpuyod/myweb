@@ -7,10 +7,36 @@
     <title>AmazingPH</title>
 
     <link rel="stylesheet" type="text/css" href="css/styling.css">
+    <script src="javascript/jquery.js"></script>
     <script src="javascript/script.js"></script>
     
 </head>
-<body>
+<body>  
+<div id="banner"></div>
+<div id="menu">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Entertainment
+                <ul>
+                    <li>Movies</li>
+                    <li>Inspirations</li>
+                    <li>Photos</li>
+                </ul>
+            </li>
+            <li>Questions
+                <ul>
+                    <li>Question 1</li>
+                    <li>Question 2</li>
+                    <li>Question 3</li>
+                </ul>
+            </li>
+            <li>Gallery</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+</div>
+<div class="clearB"></div>
     <div id="person1">
         <h1 style="font-family:Century Gothic;">Home</h1> <hr>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -36,5 +62,15 @@
         <h1 style="font-family:Century Gothic;">About Us</h1>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </div>
+
+<script>
+$(document).ready(function(){
+    $('nav li').hover(function(){
+        $('ul', this).stop().slideDown(200);
+    }, function(){
+        $('ul', this).stop().slideUp(200);
+    })
+})
+</script>
 </body>
 </html>
